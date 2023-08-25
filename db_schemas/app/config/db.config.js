@@ -1,6 +1,6 @@
 module.exports = {
-  HOST: '172.18.0.3', // Host Name
-  USER: 'postgres', // User Name
+  HOST: '172.18.0.2', // Host Name
+  USER: 'yexuan', // User Name
   PASSWORD: '110524031', // Password
   DB: 'postgres', // Database Name
   post: 5432,
