@@ -12,6 +12,10 @@ module.exports = (sequelize, Sequelize) => {
     stage: {
       type: Sequelize.INTEGER,
     },
+    state: {
+      type: Sequelize.STRING,
+      allowNull: false,
+    },
     project_stage_id: {
       type: Sequelize.INTEGER,
     },

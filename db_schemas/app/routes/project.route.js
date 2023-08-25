@@ -2,9 +2,9 @@ const db = require('../models/index.js');
 const project = db.project;
 
 exports.createProject = async function(req, res) {
-  const { id, name } = req.body;
-  console.log(id, name);
-  project.create({ id, name })
+  const { id, name, state } = req.body;
+  console.log(id, name, state);
+  project.create({ id, name, state})
       .then((data) => {
         res.send(data);
       })

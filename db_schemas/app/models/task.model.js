@@ -12,6 +12,10 @@ module.exports = (sequelize, Sequelize) => {
     stage: {
       type: Sequelize.INTEGER,
     },
+    state: {
+      type: Sequelize.STRING,
+      allowNull: false,
+    },
     activity_id: {
       type: Sequelize.INTEGER,
     },
@@ -21,9 +25,6 @@ module.exports = (sequelize, Sequelize) => {
     //     fields: ['stage', 'activity_id'],
     //   },
     // ],
-  });
-  Task.beforeValidate((task, options) => {
-    task.stage = ['planning', 'implementation', 'rewiew', 'retrospect'].indexOf(task.name) + 1;
   });
   return Task;
 };
