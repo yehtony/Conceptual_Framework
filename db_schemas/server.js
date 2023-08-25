@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const config = require('./app/config/db.config.js');
-const db = require('./app/models'); // 引入 app/models/index.js 匯出的程式碼(即 sequelize model 定義檔)
+const db = require('./app/models/index.js'); // 引入 app/models/index.js 匯出的程式碼(即 sequelize model 定義檔)
 const Role = db.role;
 const dotenv = require('dotenv');
 dotenv.config();
